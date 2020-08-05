@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning</title>
+	<style type="text/css">
+		
+		/*.modal{
+		  position:relative;
+		  top:100px;
+		  right: 30px;
+		  left: auto;
+
+		  width: 500px;
+		  border: 5px solid red;
+		  background-color:black;
+		  color:white;
+		}*/
+
+/* Absolute + Relative */
+		.card{
+		  /*width:300px;*/
+		  /*height:350px;*/
+		  /*display:inline-block;*/
+		  position:relative;
+		  border: 5px solid red;
+		}
+		.card-img{
+		  height: 200px;
+		  width: 200px;
+		  margin:0 auto;
+		  z-index: 2;
+		}
+		.card-like{
+		  font-size:30px;
+		  position:absolute;
+		  color:black;
+		  font-weight:800;
+		  z-index: 100;
+		}
+
+/* Fixed Postioning */
+		/*.nav{
+		  z-index:1;
+		  position:fixed;
+		}
+		.nav-button {
+			display: inline-block;
+			width: 200px;
+			margin: 0px;
+			padding: 5px;
+			
+		}
+		.nav1 {
+			background-color: green;
+		}
+		.nav2 {
+			background-color: cornflowerblue;
+		}
+		.nav3 {
+			background-color: red;
+		}*/
+
+/* Z-index */
+		.gold-box {
+		  position: absolute;
+		  z-index: 99; 
+		  background: gold;
+		  width: 100%;
+
+		}
+		.green-box {
+		  position: absolute;
+		  z-index: 100; 
+		  background: lightgreen;
+		  left: 65%;
+		  top: -25px;
+		  height: 7em;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- <div>Div 1</div>
+	<div style="border: 5px solid blue"> Div 2</div>
+	<div class="modal">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus a nulla in efficitur. Fusce venenatis velit id leo sollicitudin pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas aliquet, velit ac tempor bibendum, mi arcu euismod diam, ut vestibulum leo augue vitae metus. Proin finibus dui sed aliquam varius. Integer quis massa urna. Fusce vitae lacus sed nunc tincidunt sagittis. Sed id ligula id lacus sodales vehicula in eget erat. Pellentesque condimentum massa nulla, sit amet ultrices mauris ornare a. Donec dolor elit, pretium sed nulla ac, sollicitudin fringilla nunc. Nunc tincidunt mollis purus sit amet sagittis.
+	</div> -->
+
+
+<!-- Absolute + Relative together -->
+	<!-- <div class="card"> 
+	  <div>Child DIV</div>
+	  <h1 class="card-like"> 
+	    Child text
+	  </h1>
+	</div>
+	<div class="card"> 
+	  <img class="card-img" src="https://i.imgur.com/6yHmlwT.jpg"/>
+	  <h1 class="card-like"> 
+	    like
+	  </h1>
+	</div> -->
+<!-- Fixed Positioning -->
+<!-- <div class="nav">
+  <div class="nav-button nav1">
+    About
+  </div>
+  <div class="nav-button nav2">
+    Sign Up
+  </div>
+  <div class="nav-button nav3">
+    Login
+  </div>
+  <div class="nav-button nav3">
+    Login
+  </div>
+  <div class="nav-button nav3">
+    Login
+  </div>
+  <div class="nav-button nav3">
+    Login
+  </div>
+  <div class="nav-button nav3">
+    Login
+  </div>
+  <div class="nav-button nav3">
+    Login
+  </div>
+  <div class="nav-button nav3">
+    Login
+  </div>
+  <div class="nav-button nav3">
+    Login
+  </div>
+
+</div> -->
+
+<!-- Z-index -->
+<span class="gold-box">Gold box</span>
+<span class="green-box">Green box</span>
+
+</body>
+</html>

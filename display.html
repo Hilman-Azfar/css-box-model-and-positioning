@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+	<style type="text/css">
+		/*.inline{
+			background-color:yellow;
+			padding:10px;
+			margin: 20px;
+
+			border: 5px solid green;
+
+			width: 100px;
+			height: 100px;
+		}
+
+		.div-tag {
+			border: 5px solid red;
+		}*/
+
+
+		/* Block */
+
+		.block {
+			padding:20px;
+			margin: 20px;
+			border-color: black;
+			border-width: 5px;
+			border-style: solid;
+			box-sizing: border-box;
+		}
+
+		div.block:nth-child(even) {
+			width: 300px;
+			padding:20px;
+			margin: 20px;
+			background: green;
+		}
+
+		/* Inline Block */
+
+		.nav-button {
+			display: inline-block;
+			width: 200px;
+			margin: 0px;
+			padding: 5px;
+			
+		}
+		.nav1 {
+			background-color: green;
+		}
+		.nav2 {
+			background-color: cornflowerblue;
+		}
+		.nav3 {
+			height: 60px;
+			/*width: 100%;*/
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<!-- Inline => Text Styling -->
+	<div class="div-tag">Div </div>
+	<p>
+	  To operate your life vest 
+	  <span class="inline">pull on the red strap</span>
+	  . If it does not inflate, blow on the attached tube.
+	</p>
+
+
+	<!-- Block => Layout Rows -->
+	<div class="block">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus a nulla in efficitur.
+	</div>
+	<div class="block">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus a nulla in efficitur.
+	</div>
+	<div class="block">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus a nulla in efficitur.
+	</div>
+
+	<!-- Nav Bar Layout -->
+	<!-- 1st part -->
+	<!-- <div class="nav-button nav1">
+	  About
+	</div>
+	<div class="nav-button nav2">
+	  Sign Up
+	</div>
+	<div class="nav-button nav3">
+	  Login
+	</div>
+	<div class="nav-button nav2">
+	  Sign Up
+	</div>
+	<div class="nav-button nav2">
+	  Sign Up
+	</div>
+	<div class="nav-button nav2">
+	  Sign Up
+	</div>
+	<div class="nav-button nav2">
+	  Sign Up
+	</div> -->
+
+	<!-- 2nd part -->
+
+	<!-- <div class="nav-button nav2">
+	  Sign Up
+	</div>
+	<div class="nav-button nav2">
+	  Sign Up
+	</div>
+	<div class="nav-button nav2">
+	  Sign Up
+	</div> -->
+
+</body>
+</html>

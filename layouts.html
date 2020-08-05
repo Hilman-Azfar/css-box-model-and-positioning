@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layouts</title>
+	<style type="text/css">
+		.column{
+		  display:inline-block;
+		  width:50%;
+		  border: 5px solid pink;
+		  /*background-color:pink;*/
+		  box-sizing:border-box;
+		  float:left;
+		  padding:10px;
+		  /*margin: 10px;*/
+		}
+
+		.column-container:after{
+		  display: table;
+		  clear: both;
+		  content: '';
+		}
+	</style>
+</head>
+<body>
+	<!-- Float Column Layout -->
+	<div class="column-container">
+	  <div class="column">stuff</div>
+	  <div class="column">stuff</div>
+	</div>
+
+</body>
+</html>

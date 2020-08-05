@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model Demo</title>
+	<style type="text/css">
+		.box-margin-parent {
+			margin: 20px;
+		}
+		.box-margin {
+			margin: 30px;  /* denotes 20px for T R B L */
+
+			/*margin-top: 20px;
+		    margin-right: 20px;
+		    margin-bottom: 20px;
+		    margin-left: 20px;*/
+
+		    /*margin: 20px 10px 20px 10px;*/ /* denotes 20px for T B & 10px L R */
+
+		    /*margin: 20px 10px; */ /*T, B - 20px  L, R - 10px*/ 
+
+		    /* Aligns elements in center horizontally*/
+		    /*width: 400px;
+		    margin: 0 auto;*/
+
+		    /* writing auto for top/bottom has no effect - browser doesn't set any margin by default */
+		}
+
+		.box-border {
+			border-width: 5px;
+			border-style: solid;
+			border-color: darkblue;
+
+			/*border: 5px dotted darkblue;*/
+
+			/* ==border & background together== */
+			/* border: 5px dotted darkblue;  
+			background: yellow; */
+		}
+		.box-padding {
+			/*padding: 20px;*/
+
+			/*padding-top: 3px;
+			padding-right: 1px;
+			padding-bottom: 0px;
+			padding-left: 9px;*/
+
+			/*padding: 3px 1px 0 9px;*/
+
+			padding: 20px 10px;
+
+			/*padding: 20px;*/
+			border: 5px solid darkblue;
+
+		}
+
+		.box-all {
+			width: 400px;
+			margin: 0px auto;
+			padding: 10px;
+			border: 5px solid darkblue;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<!-- You can see the box model for each element in Chrome Dev Tools just below Elements section -->
+	<div class="box-all">
+		DIV Element 1
+	</div>
+	<!-- <div class="box-margin">
+		DIV Element 2
+	</div>
+	<div class="box-margin">
+		DIV Element 3
+	</div>
+	<div class="box-border">
+		<div class="box-margin">
+			DIV Element 4
+		</div>
+		<div class="box-border">
+			DIV Element 5
+		</div>
+	</div> -->
+
+	<!-- <div class="box-all">
+		DIV showing all Box Model properties & box-sizing
+	</div> -->
+	
+</body>
+</html>

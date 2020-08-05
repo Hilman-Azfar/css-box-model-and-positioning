@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Floats and Clear</title>
+	<style type="text/css">
+		.sibling {
+			/*width: 400px;*/
+			display: inline-block;
+			border: 5px solid #0074d9;
+		  	color: #0074d9;
+		  	padding: 20px;
+		  	margin: 10px;
+		  	float: right;
+
+		}
+		.sibling-parent {
+			border: 5px solid green;
+			padding: 20px;
+			/*clear: right;*/
+		}
+		.sibling-right {
+			border: 5px solid red;
+		  	color: red;
+		  	padding: 20px;
+		  	margin: 10px;
+		  	/*float: right;*/
+		}
+
+		/* Clearfix solution */
+		.sibling-parent::after {
+		  content: "";
+		  clear: both;
+		  display: block;
+		}
+		.sibling-child {
+			border: 5px solid red;
+		  	color: darkblue;
+		  	margin: 10px;
+		  	padding: 20px;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- <div class="sibling">Element</div>
+	<div class="sibling">Element</div>
+	<div class="sibling">Element</div>
+	<div class="sibling">Element</div>
+	<div class="sibling">Element</div> -->
+	<div class="sibling-parent">
+		<!-- <div class="sibling-child">Child element</div>
+		<div class="sibling-child">Child element</div>
+		<div class="sibling-child">Child element</div> -->
+
+		<!-- Float problem  -->
+		<div class="sibling">Element</div>
+		<div class="sibling">Element</div>
+		<div class="sibling">Element</div>
+		<div class="sibling">Element</div>
+		<div class="sibling">Element</div>
+	</div>
+	<!-- <div class="sibling-right">Element</div>
+	<div class="sibling-right">Element</div>
+	<div class="sibling-right">Element</div>
+	<div class="sibling-right">Element</div>
+	<div class="sibling-right">Element</div>
+	<div class="sibling-right">Element</div> -->
+
+</body>
+</html>
